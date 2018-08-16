@@ -1,0 +1,18 @@
+section#title-bar {
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  background: #1caa98;
+  color: white;
+
+  h1 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+img.demo {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid lightgray;
+}
