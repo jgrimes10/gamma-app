@@ -17,3 +17,12 @@ footer {
     float: right;
   }
 }
+
+/* MEDIA QUERIES */
+@media(max-width: 768px) {
+  footer p {
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+}

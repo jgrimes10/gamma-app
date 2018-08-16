@@ -1,5 +1,5 @@
 .jumbotron {
-  background: url("../../assets/img/site_showcase_bg.jpg") no-repeat top center;
+  background: #1b222a url("../../assets/img/site_showcase_bg.jpg") no-repeat top center;
   color: #fff;
   height: 500px;
   overflow: hidden;
@@ -12,6 +12,11 @@
 
   p {
     margin-bottom: 40px;
+  }
+
+  section#feature ul {
+    padding: 0;
+    margin: 0;
   }
 
   img.app-btn {
@@ -40,5 +45,60 @@ section#feature {
     font-size: 22px;
     list-style: none;
     line-height: 2em;
+  }
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 991px) {
+  .jumbotron {
+    img.showcase-img {
+      display: none;
+    }
+  }
+}
+@media(min-width: 768px) and (max-width: 990px) {
+  .jumbotron {
+    height: 400px !important;
+    background-size: 100% 100%;
+
+    img.app-button {
+      width: 40%;
+    }
+
+    h1 {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .jumbotron {
+    height: 350px !important;
+
+    h1 {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .jumbotron {
+    height: 450px !important;
+    background-image: none;
+    text-align: center;
+
+    img.app-btn {
+      width: 60%;
+      margin: 0 auto 30px auto;
+      display: block;
+    }
+  }
+
+  section#feature ul li {
+    font-size: 19px !important;
   }
 }
